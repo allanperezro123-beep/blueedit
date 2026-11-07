@@ -1,0 +1,21 @@
+# Logs and Debugging
+*.log
+firebase-debug.log*
+.firebase/
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Local Backups & Temporary files
+backup_local_*/
+.atl/
+.vscode/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 354" width="600" height="354">
+  <title>BC logo</title>
+  <desc>Logo vectorial con formas redondeadas, perforaciones transparentes y gradiente azul a cian.</desc>
+  <defs>
+    <linearGradient id="bcGradient" x1="78" y1="180" x2="566" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0865F5"/>
+      <stop offset=".28" stop-color="#087CF5"/>
+      <stop offset=".53" stop-color="#079AF0"/>
+      <stop offset=".76" stop-color="#04B9EA"/>
+      <stop offset="1" stop-color="#08D0E6"/>
+    </linearGradient>
+  </defs>
+
+  <g fill="url(#bcGradient)" stroke="none">
+    <!-- B: contorno exterior y dos contraformas transparentes -->
+    <path fill-rule="evenodd" d="
+      M 83 68
+      H 230
+      C 269 68 296 89 307 121
+      C 311 132 310 141 304 151
+      L 261 199
+      Q 258 202 261 206
+      L 304 254
+      C 311 264 310 274 306 285
+      C 294 313 268 327 230 327
+      H 83
+      Q 79 327 79 323
+      V 72
+      Q 79 68 83 68
+      Z
+
+      M 141 118
+      Q 138 118 138 122
+      V 166
+      Q 138 170 142 170
+      H 222
+      C 240 170 251 160 251 144
+      C 251 128 240 118 222 118
+      Z
+
+      M 142 218
+      Q 138 218 138 222
+      V 273
+      Q 138 277 142 277
+      H 226
+      C 244 277 256 266 256 247
+      C 256 229 244 218 226 218
+      Z
+    "/>
+
+    <!-- C exterior: punta superior e inferior cortadas en diagonal, con uniones suaves -->
+    <path d="
+      M 254 202
+      L 344 100
+      C 365 76 385 66 412 66
+      H 564
+      Q 568 66 565 70
+      L 523 116
+      Q 520 119 515 119
+      H 416
+      C 398 119 385 126 372 140
+      L 318 201
+      Q 315 205 319 209
+      L 372 263
+      C 385 277 398 284 416 284
+      H 520
+      Q 524 284 527 288
+      L 565 333
+      Q 568 337 563 337
+      H 416
+      C 386 337 364 327 343 305
+      L 254 209
+      Q 251 205 254 202
+      Z
+    "/>
+
+    <!-- Chevrón interior izquierdo: extremos redondeados -->
+    <path d="
+      M 411 145
+      Q 420 145 426 151
+      L 441 166
+      Q 447 172 441 178
+      L 405 205
+      L 441 243
+      Q 447 249 441 255
+      L 427 263
+      Q 419 269 411 263
+      L 360 213
+      Q 353 206 360 198
+      L 401 152
+      Q 405 145 411 145
+      Z
+    "/>
+
+    <!-- Chevrón interior derecho -->
+    <path d="
+      M 487 145
+      Q 478 145 472 152
+      L 466 159
+      Q 460 165 466 171
+      L 504 205
+      L 466 242
+      Q 460 248 466 254
+      L 474 262
+      Q 481 269 490 265
+      L 550 213
+      Q 557 206 550 198
+      L 500 151
+      Q 495 145 487 145
+      Z
+    "/>
+  </g>
+</svg>
