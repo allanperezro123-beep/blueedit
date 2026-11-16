@@ -98,6 +98,21 @@ python tools/build.py
 
 El script incrusta el CSS, el banco vectorial de glifos y la lógica de `tools/app.js` directamente en `public/index.html`.
 
+### Probar antes de publicar
+La prueba de ergonomía levanta su propio servidor y un Chrome sin ventana; no hay nada que arrancar a mano:
+
+```bash
+npm install            # solo la primera vez (puppeteer-core)
+node tools/ux-test.js  # escritorio 1440 px + teléfono 390 px
+```
+
+Cubre lo que se rompió alguna vez: que **Hoja A4** agregue una hoja en vez de reemplazar el documento, que `Esc` y el clic afuera cierren los diálogos, que los avisos no tapen el panel de Capas, que los paneles se puedan plegar y que en un teléfono se vea la hoja y se alcancen todas las herramientas.
+
+### Dónde vive cada cosa
+- **Estilos y marcado**: `editor-actas.html`. Lo de comodidad de uso (paneles plegables, vista de teléfono, avisos) está al final del `<style>`, en el bloque `UX-LAYER`.
+- **Lógica**: `tools/app.js`. El módulo `UX`, al final del archivo, acompaña a ese bloque de estilos.
+- `public/index.html` es **salida** de `build.py`: no se edita a mano.
+
 ---
 
 ## 🌐 Despliegue en Firebase Hosting
